@@ -1,3 +1,7 @@
+function getName(){
+    alert("Call function from out of component!");
+}
+
 
 var Tksoft = React.createClass({
     getInfo: function(){
@@ -8,7 +12,7 @@ var Tksoft = React.createClass({
             <div>
                 <h1 className="yellow">{this.props.ten}-{this.props.giangvien}</h1>
                 <p>{this.props.children}</p>
-                <button onClick={this.getInfo}>Get Info!</button>
+                <button onClick={getName}>Get Info!</button>
                 <Sub></Sub> 
             </div>    
         );
